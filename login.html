@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><title>Log in</title></head>
-    <meta charset="utf-8">
+    <head><title>Log in</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="login.css">
+    <!--Font Awesome CON link for icons-->
+  <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css>
+   <script src="jquery.js"></script>
+    </head>
     <body>
      <main><a name="Log in"></a>
      <div class="container">
@@ -12,30 +16,68 @@
             <div class="title">
                 <h1>Login Form:</h1>
             </div>
-            <form action="">
+            <form action="" name="form1">
+              <div class="field user">
               <div class="INF">
-                <input type="text" name="user" placeholder="Username"/>
-              </div> 
+                <input type="text" name="user" placeholder="Username">
+                <i classs="error error-icon fas fa-exclamation-circle"></i>
+              </div>
+                <div class="error error-txt">User can't be blank</div>
+              </div>
+               <div class="field password">
               <div class="INF">
-                <input type="password" name="pwd" placeholder="Password"/>
-              </div> 
+                <input type="password" name="pwd" placeholder="Password">
+                <i classs="error error-icon fas fa-exclamation-circle"></i>
+              </div>
+                <div class="error error-txt">Password can't be blank</div>
+               </div>
               <div class="INF">
                 <input type="submit" class="login" value="Login"/>
               </div>
+            
               <p class="link-text">
                 Forget password?
                 <a href="#">Click here.</a>
               </p>
               <p class="link-text">
                 Don't have an account?
-                <a href="signup.html" target="_self">Sign up.</a>
+                <a href="#" onclick="CON1()">Click here.</a>
               </p>
 
 
-            </form>
+            </form> 
         </section>
      </div>
-     </main>
+      <div class="container1">
+         <div class="class1"></div>
+         <div class="class2"></div>
+         <section>
+             <div class="title">
+                 <h1 class="t2">Create an account:</h1>
+             </div>
+             <form action="" name="form2">
+              <div class="userpass"></div>
+               <div class="INF">
+                 <input type="text" name="full" placeholder="full name"/>
+                 <div class="muser"></div>
+                </div> 
+               <div class="INF">
+                 <input type="password" name="pwd" placeholder="Enter a password"/>
+                 <div class="mpwd"></div>
+                </div> 
+               <div class="INF">
+                 <input type="submit" class="login" value="Create Account" onclick="verify1()"/>
+               </div>
+             
+              <p class="link-text">
+                     Already have an account?
+              <a href="#" onclick="CON()">Log in.</a>
+              </p>
+              </form>
+             </section>
+          </div>
+          </main>
+          <script src="login.js"></script> 
     </body>
 </html>
 
