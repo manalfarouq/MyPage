@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Kanit:wght@200&family=Rajdhani&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');*/
 *{
     margin:0px;
     padding:0;
@@ -10,20 +10,21 @@
 }
 
 main{
-    background:linear-gradient(to top,rgb(19, 19, 105), rgb(0, 0, 0));
+    background:linear-gradient(to bottom, black,rgb(19, 19, 105));
     min-height:100vh;
     display:flex;
     align-items: center;
     justify-content:center;
-    font-family:'Chakra Petch', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
 }
 
-.container{
+.container, .container1{
     min-height: var(--height);
     width:var(--width);
     position:relative;
     text-align: center;
 }
+
 
 section{ min-height:var(--height);
     width:var(--width); 
@@ -56,9 +57,18 @@ text-align: center;
     width:200px;
     height:4px;
     background-color:#fff;
-    
 }
 
+.title .t2::before{
+    content:"";
+    position:absolute;
+    left:9px;
+    bottom:-10px;
+    width:280px;
+    height:4px;
+    background-color:#fff;
+    
+}
 form{
     padding:1px;
 }
@@ -78,12 +88,10 @@ form .INF input{
     font-size: 1rem;
     letter-spacing: 1px;
     color:aliceblue;
-    transition:0.5s;
-    font-family: 'Kanit', sans-serif;
+    transition:all 0.2s ease;
 }
 form .INF input:hover{
     transform:scale(1.1);
-    font-weight: bold;
 }
 
 
@@ -93,22 +101,98 @@ form .INF input[type='submit']{
     color: aliceblue;
     margin-bottom:20px;
     cursor:pointer;
-    font-family:'Chakra Petch', sans-serif;
+    transition: all 0.3s ease;
 }
 
 form .link-text{
     color: rgba(255, 255, 255,0.5);
     margin-top:15px;
     font-size:0.85rem;
-    font-family: 'Rajdhani', sans-serif;
-    font-style: oblique;
 }
 
 form .link-text a{
    text-decoration: none;
-   color:rgba(255, 255, 255, 0.532);
+   color:rgba(255, 255, 255,0.5);
    font-weight: 700;
    cursor:pointer;
-   font-family:'Chakra Petch', sans-serif;
-   font-style: normal;
 }
+
+form .field .error input{
+    border-color:#dc3545;
+}
+
+.field .INF i{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+form .field .error-txt{
+    color: #dc3545;
+    margin-top: 5px;
+    text-align: left;
+}
+
+form .field .error{
+    display: none;
+}
+
+form .field{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form .field.shake{
+    animation : shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100%{
+        margin-left: 0px;
+    }
+    20%, 80%{
+       margin-left: -12px ;
+    }
+    40%, 60%{
+        margin-left: 12px;
+    }
+}
+
+form .field .INF{
+    position: relative;
+    width:100%;
+    height:50px;
+}
+
+form .field.shake input, 
+form .field.error input{
+    border-color: #dc3545;
+}
+
+.INF .icon{
+    left: 15px;
+    color:#dc3545;
+}
+
+form.field.shake input:focus ~ .icon, 
+form .field.error input:focus ~ .icon{
+    color:#bfbfbf;
+}
+
+form .field.shake .error, 
+form .field.error .error{
+    display:block;
+}
+
+form .field input:focus,
+form .field.valid input{
+  border-color:rgba(255, 255, 255,0.1);
+}
+
+::selection{
+    color: #fff;
+    background: rgba(255, 255, 255,0.1);
+}
+  
