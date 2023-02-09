@@ -1,245 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="test.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <script src="test.js"></script>
+    <title>test</title>
+</head>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fontawesome.com/releases/v5.15/css/all.css"
-    />
-  </head>
-  <body>
-    <section class="header">
-      <nav>
-        <a href="index.html"><img src="./images/logo.png" /></a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">COURSE</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">CONTACT</a></li>
-          </ul>
-        </div>
-
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
-      <div class="text-box">
-        <h1>World Biggest University</h1>
-        <p>
-          Making Website is now one of the easiest thing in the world. you just
-          need to learn HTML,CSS, <br />
-          JavaScript and you aregood to go.
-        </p>
-        <a href="" class="hero-btn">Visit Us To Known More</a>
-      </div>
-    </section>
-
-    <!--Courses-->
-    <section class="course">
-      <h1>Course we offer</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-        voluptatem.
-      </p>
-      <div class="row">
-        <div class="course-col">
-          <h3>Intermediate</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
-            obcaecati vel facilis repudiandae, ex sed tempore quaerat debitis
-            corrupti accusantium, adipisci quia ut expedita illum excepturi.
-          </p>
-        </div>
-        <div class="course-col">
-          <h3>Degree</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
-            obcaecati vel facilis repudiandae, ex sed tempore quaerat debitis
-            corrupti accusantium, adipisci quia ut expedita illum excepturi.
-          </p>
-        </div>
-        <div class="course-col">
-          <h3>Post Graduation</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
-            obcaecati vel facilis repudiandae, ex sed tempore quaerat debitis
-            corrupti accusantium, adipisci quia ut expedita illum excepturi.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!--Campus-->
-    <section class="campus">
-      <h1>Our Global Campus</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ullam
-        praesentium eaque!
-      </p>
-
-      <div class="row">
-        <div class="campus-col">
-          <img src="./images/london.png" />
-          <div class="layer">
-            <h3>LONDON</h3>
+<body>
+  <input type="radio" name="r" id="radio1" checked style="display: none">
+  <input type="radio" name="r" id="radio2"  style="display: none">
+    <div class="card">
+        <input type="checkbox" id="chk" aria-hidden="true" name="">
+        <div class="content">
+        <!--login form-->
+          <div class="front">
+            <div class="inner">
+              <h2>Log in</h2>
+              <p>Access your account now!</p>
+              <input type="text" name="user" placeholder="Username">
+              <input type="password" name="pwd" placeholder="Password">
+              <label for="chk" aria-hidden="true" class="toggle-form">Don't have an account?</label>
+              <button type="button">Login</button>
+            </div>
           </div>
-        </div>
-        <div class="campus-col">
-          <img src="./images/newyork.png" />
-          <div class="layer">
-            <h3>New York</h3>
+          <!--sign up form-->
+          <div class="back">
+            <div class="inner">
+              <h2>Sign up</h2>
+              <p>Create your account now!</p>
+              <input type="text" name="user" placeholder="Full name">
+              <input type="email" name="email" placeholder="Email address">
+              <input type="text" name="code" placeholder="Code">
+              <input type="password" name="pwd" placeholder="Create Password">
+              <button type="button">Sign up</button>
+              <label for="chk" aria-hidden="true" class="toggle-form">Back to log-in</label>
+            </div>
           </div>
-        </div>
-        <div class="campus-col">
-          <img src="./images/washington.png" />
-          <div class="layer">
-            <h3>WASHINGTON</h3>
-          </div>
+          <!--Reset password
+          <div id="form1">
+            <form action="#" method="post" autocomplete="off">
+              <h2 id="heading">Reset your password</h2>
+              <p>We'll email you instructions to reset the password.</p>
+              <input type="text" placeholder="Full name" name="nframe">
+              <input type="email" placeholder="Email@gmail.com" name="nframe">
+              <button type="button" style="position:relative; top:90px;">Reset password</button>
+              <label for="chk" aria-hidden="true" class="toggle-form">Return to log-in</label>
+            </form>
+          </div>-->
         </div>
       </div>
-    </section>
-
-    <!--Facilities-->
-    <section class="facilities">
-      <h1>Our Facilities</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolorem
-        ipsum explicabo!
-      </p>
-      <div class="row">
-        <div class="facilities-col">
-          <img src="./images/library.jpg" />
-          <h3>World Classs Libaray</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus maiores laborum ha Doloremque praesentium aspernatur
-            temporibus!
-          </p>
-        </div>
-        <div class="facilities-col">
-          <img src="./images/basketball.jpg" />
-          <h3>Latest Play Ground</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus maiores laborum ha Doloremque praesentium aspernatur
-            temporibus!
-          </p>
-        </div>
-        <div class="facilities-col">
-          <img src="./images/cafeteria.jpg" />
-          <h3>Taste and Healthy Food</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus maiores laborum ha Doloremque praesentium aspernatur
-            temporibus!
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!--Testominals-->
-    <section class="testimonials">
-      <h1>What our Student Says</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum eos
-        cupiditate a! Rerum?
-      </p>
-      <div class="row">
-        <div class="testimonials-col">
-          <img src="./images/user1.jpg" />
-          <div>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
-              veniam, rerum possimus voluptatum blanditiis magnam aliquid quos
-              placeat inventore, tempore optio accusantium obcaecati ea, quasi
-              unde dicta ullam consectetur doloremque distinctio expedita?
-            </p>
-            <h3>Sami Ullah</h3>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-        </div>
-        <div class="testimonials-col">
-          <img src="./images/user2.jpg" />
-          <div>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
-              veniam, rerum possimus voluptatum blanditiis magnam aliquid quos
-              placeat inventore, tempore optio accusantium obcaecati ea, quasi
-              unde dicta ullam consectetur doloremque distinctio expedita?
-            </p>
-            <h3>Zeeshan Danish</h3>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Call To Action-->
-    <section class="cta">
-      <h1>
-        Enroll for our various online courses <br />
-        AnyWhere from the world
-      </h1>
-      <a href="" class="hero-btn">CONTACT US</a>
-    </section>
-
-    <!---footer-->
-    <section class="footer">
-      <h4>About Us</h4>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero <br />
-        maxime placeat, perspiciatis dolores odit iusto obcaecati ratione,
-        perferendis esse quo eos minus optio necessitatibus?
-      </p>
-      <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-      </div>
-      <p>Made with <i class="fa fa-heart-o"></i> by Code For Beginners</p>
-    </section>
-    <!-- #JavaScript for toggle menu -->
-    <script>
-      var navLinks = document.getElementById("navLinks");
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
-  </body>
-</html>
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-full-websitessss/index.html at main · MuhammadSamiUllah/full-websitessss
+</body>
